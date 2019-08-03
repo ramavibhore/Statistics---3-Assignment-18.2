@@ -1,0 +1,35 @@
+'''
+In one state, 52% of the voters are Republicans, and 48% are Democrats. In a second
+state, 47% of the voters are Republicans, and 53% are Democrats. Suppose a simple
+random sample of 100 voters are surveyed from each state.
+What is the probability that the survey will show a greater percentage of Republican
+voters in the second state than in the first state?
+'''
+
+* Random sample of 100 voters are taken from first state. So sample from state1 is n1=100
+* Random sample of 100 voters are taken from second state. So sample from state2 is n2=100
+
+* From the sample, probability of Republican voters from state1 is 52% i.e P1= 0.52 and (1-P1)=1-0.52=0.48
+* From the sample, probability of Republican voters from state2 is 47% i.e P2= 0.47 and (1-P2)=1-0.47=0.53
+
+* Now the mean of the difference for the voters from both state is M=(P1-P2)=(0.52-0.47)=0.05
+
+* Standard Deviation for the mean difference is
+	S = sqrt{[P1(1-P1)/n1] + [P2*(1-P2)/n2]} = sqrt{[0.52 * 0.48]/100 + [0.47 * 0.53]/100}
+		= sqrt{0.002496 + 0.002491}
+		= 0.07061869440877536
+		=~ 0.0706186
+		
+* As the p1 probability is less than p2 hence p1-p2 can be x=0
+
+* To calculate the Z score , Z = (X-M)/S = (0-0.05)/0.0706186 = -0.708028763
+
+Now using Normal Distribution, P(Z<=0.708028763) = 0.24
+
+the probability that the survey will show a greater percentage of Republican voters in the second state 
+than in the first state is 0.24.
+
+
+
+
+
